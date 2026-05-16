@@ -11,7 +11,7 @@ const Navbar = () => {
         await logout();
         navigate('/');
     };
-
+    // Si no hay usuario, no mostrar nada (o podrías redirigir a login)
     // Determinar qué rol mostrar (para la etiqueta visual)
     const rolTexto = backendUser?.tipoUsuario === 'voluntario' ? 'Voluntario'
                     : backendUser?.tipoUsuario === 'ayudado' ? 'Solicitante'

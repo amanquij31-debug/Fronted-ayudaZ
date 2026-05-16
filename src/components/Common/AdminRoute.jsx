@@ -7,4 +7,6 @@ const AdminRoute = ({ children }) => {
     return backendUser?.tipoUsuario === 'admin' ? children : <Navigate to="/dashboard" />;
 };
 
+
+//
 export default AdminRoute;

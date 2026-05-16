@@ -7,6 +7,7 @@ const RankingSidebar = () => {
     const [ranking, setRanking] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    // Cargar ranking al montar el componente
     useEffect(() => {
         api.get('/ranking/mensual')
             .then(res => setRanking(res.data))
